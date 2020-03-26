@@ -1,29 +1,20 @@
 #include <stdio.h>
 #include <math.h>
+#include <stdlib.h>
 
-int equation ()
+int equation(double a, double b, double c, double* x)
 {
-    double* m;
-    double d;
-    double a,b,c;
-    double x1, x2;
-    printf("Введите член a: ");
-    scanf("%lf", &a);
-    printf("\nВведите член b: ");
-    scanf("%lf", &b);
-    printf("\nВведите член c: ");
-    scanf("%lf", &c);
-    d = b * b - 4 * a * c;
+    double d = b * b - 4 * a * c;
 
     if (d > 0) {
-        x1 = (-b + sqrt(d)) / 2 * a;
-        x2 = (-b - sqrt(d)) / 2 * a;
-    } else  if (d < 0)
-        printf("\nНет корней");
-        else x1 = ((-b + sqrt(d)) / 2 * a);
-    //printf("%lf" "%lf", x1, x2);
-    m[0] = x1;
-    m[1] = x2;
-    printf("%lf" "%lf", m[0], m[1]);
-    return 0;
+        x[0] = (-b + sqrt(d)) / (2 * a);
+        x[1] = (-b - sqrt(d)) / (2 * a);
+    } else if (d == 0) {
+        x[0] = (-b + sqrt(d)) / (2 * a);
+        return 1;
+    }
+        else {
+        return 0;
+    }
+    return 1;
 }

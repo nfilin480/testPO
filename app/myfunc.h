@@ -5,6 +5,6 @@ int myfunc(int b);
 
 int fibonachi(int num);
 
-int equation();
+int equation (double a, double b, double c, double* x);
 
 #endif // MYFUNC_H
