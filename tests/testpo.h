@@ -40,8 +40,7 @@ TEST(equal, negative){
 TEST(equal, negative2){
     double* x;
     x = (double*) malloc(2 * sizeof(double));
-    equation(0, 0, 0, x);
-    EXPECT_EQ(x[0], -nan);
+    ASSERT_EQ(equation(0, 0, 0, x), -1);
 }
 
 #endif
