@@ -9,11 +9,22 @@ int main()
     x = (double*) malloc(2 * sizeof(double));
 
     printf("Print a: ");
-    scanf("%lf", &a);
+    if (scanf("%lf", &a) == 0){
+        fprintf(stderr, "Ошибка чтения");
+        exit(EXIT_FAILURE);
+    };
+
     printf("Print b: ");
-    scanf("%lf", &b);
+    if (scanf("%lf", &b) == 0){
+        fprintf(stderr, "Ошибка чтения");
+        exit(EXIT_FAILURE);
+    };
+
     printf("Print c: ");
-    scanf("%lf", &c);
+    if (scanf("%lf", &a) == 0){
+        fprintf(stderr, "Ошибка чтения");
+        exit(EXIT_FAILURE);
+    };
     int result = equation(a, b, c, x);
 
     if (result == 0) printf("Equation has no roots\n");
