@@ -41,7 +41,7 @@ TEST(equal, negative2){
     double* x;
     x = (double*) malloc(2 * sizeof(double));
     equation(0, 0, 0, x);
-    EXPECT_EQ(x[0], -1);
+    EXPECT_EQ(x[0], -nan);
 }
 
 #endif
