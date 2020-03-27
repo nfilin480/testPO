@@ -2,7 +2,7 @@
 #include <math.h>
 #include <stdlib.h>
 
-#define EPS = 0.000000000000000001
+#define EPS 0.000000000000000001
 
 int equation(double a, double b, double c, double* x)
 {
