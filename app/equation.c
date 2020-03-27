@@ -22,7 +22,7 @@ int equation(double a, double b, double c, double* x)
         x[0] = (-b + sqrt(d)) / (2 * a);
         x[1] = (-b - sqrt(d)) / (2 * a);
 	return 2;
-    } else if (d == 0 && a!= EPS) {
+    } else if (d == 0 && a != 0) {
         x[0] = (-b + sqrt(d)) / (2 * a);
         return 1;
     }
