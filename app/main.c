@@ -21,7 +21,7 @@ int main()
     };
 
     printf("Print c: ");
-    if (scanf("%lf", &a) == 0){
+    if (scanf("%lf", &c) == 0){
         fprintf(stderr, "Ошибка чтения");
         exit(EXIT_FAILURE);
     };
