@@ -27,5 +27,5 @@ int equation(double a, double b, double c, double* x)
         return 1;
     }
 
-    if (d < EPS) return 0; else return -1;
+    if (d < 0) return 0; else return -1;
 }
