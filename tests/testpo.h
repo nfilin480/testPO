@@ -1,13 +1,11 @@
 #ifndef TESTPO_H
 #define TESTPO_H
 
-
 #include <gtest/gtest.h>
 #include <gmock/gmock-matchers.h>
-#include "myfunc.h"
 
 extern "C" {
-#include "myfunc.h"
+#include "equation.h"
 }
 TEST(equal, no_roots){
     double* x;
@@ -43,5 +41,24 @@ TEST(equal, negative2){
     int result = equation(0, 0, 0, x);
     EXPECT_EQ(result, -1);
 }
+
+TEST(count, no_roots){
+    EXPECT(equation(1, 2, 4, 0), 0);
+}
+
+TEST(count, one_root){
+    EXPECT(equation(1, 4, 4, 0), 1);
+}
+
+TEST(count, two_roots){
+    EXPECT(equation(1, 8, 4, 0), 2);
+}
+
+
+
+
+
+
+
 
 #endif
