@@ -43,15 +43,21 @@ TEST(equal, negative2){
 }
 
 TEST(count, no_roots){
-    EXPECT_EQ(equation(1, 2, 4, 0), 0);
+    double* x;
+    x = (double*) malloc(2 * sizeof(double));
+    EXPECT_EQ(equation(1, 2, 4, x), 0);
 }
 
 TEST(count, one_root){
-    EXPECT_EQ(equation(1, 4, 4, 0), 1);
+    double* x;
+    x = (double*) malloc(2 * sizeof(double));
+    EXPECT_EQ(equation(1, 4, 4, x), 1);
 }
 
 TEST(count, two_roots){
-    EXPECT_EQ(equation(1, 8, 4, 0), 2);
+    double* x;
+    x = (double*) malloc(2 * sizeof(double));
+    EXPECT_EQ(equation(1, 8, 4, x), 2);
 }
 
 
