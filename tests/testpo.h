@@ -43,15 +43,15 @@ TEST(equal, negative2){
 }
 
 TEST(count, no_roots){
-    EXPECT(equation(1, 2, 4, 0), 0);
+    EXPECT_EQ(equation(1, 2, 4, 0), 0);
 }
 
 TEST(count, one_root){
-    EXPECT(equation(1, 4, 4, 0), 1);
+    EXPECT_EQ(equation(1, 4, 4, 0), 1);
 }
 
 TEST(count, two_roots){
-    EXPECT(equation(1, 8, 4, 0), 2);
+    EXPECT_EQ(equation(1, 8, 4, 0), 2);
 }
 
 
