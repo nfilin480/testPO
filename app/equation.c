@@ -1,9 +1,8 @@
 #include <math.h>
 
-
 int equation(double a, double b, double c, double* x)
 {
-    double d = b * b - 4 * a * c;
+    double d = pow(b, 2) - 4 * a * c;
 
     if (a == 0 && b != 0) {
          x[0] = -c / b;
