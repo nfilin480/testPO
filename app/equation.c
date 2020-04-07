@@ -1,5 +1,6 @@
 #include <math.h>
 
+
 int equation(double a, double b, double c, double* x)
 {
     double d = b * b - 4 * a * c;
