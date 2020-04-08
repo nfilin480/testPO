@@ -17,8 +17,6 @@ after_success:
   addons:
   sonarcloud:
     organization: "nfilin480"
-    token:
-      secure: "64d1bfba0c9f453f7b3df4dee2fa3903416cd2d8"
       
   cache:
   directories:
